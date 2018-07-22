@@ -20,6 +20,6 @@ public class HelloWorldController {
     @ResponseBody
     public String defaultHello(@RequestParam(name="name", required=false, defaultValue = "Stranger") String name) {
 //        return new Greeting(counter.incrementAndGet(), String.format(template, name));
-        return "Hello There! your name is "+String.format(template, name);
+        return "Hi There! your name is "+String.format(template, name);
     }
 }
