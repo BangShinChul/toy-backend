@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@CrossOrigin(origins = {"http://localhost:9000","http://localhost:9001", "http://localhost:3000"}, maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:9000","http://localhost:9001","http://localhost:3000","http://localhost:8080"}, maxAge = 4800, allowCredentials = "false")
 @RestController
 public class HelloWorldController {
     private static final String template = "Hello %s!";
@@ -14,5 +14,12 @@ public class HelloWorldController {
     @ResponseBody
     public Greeting sayHello(@RequestParam(name="name", required=false, defaultValue = "Stranger") String name) {
         return new Greeting(counter.incrementAndGet(), String.format(template, name));
+    }
+
+    @GetMapping("/")
+    @ResponseBody
+    public String defaultHello(@RequestParam(name="name", required=false, defaultValue = "Stranger") String name) {
+//        return new Greeting(counter.incrementAndGet(), String.format(template, name));
+        return "Hello There! your name is "+String.format(template, name);
     }
 }
