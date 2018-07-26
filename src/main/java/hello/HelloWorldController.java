@@ -20,6 +20,6 @@ public class HelloWorldController {
     @ResponseBody
     public String defaultHello(@RequestParam(name="name", required=false, defaultValue = "Stranger") String name) {
 //        return new Greeting(counter.incrementAndGet(), String.format(template, name));
-        return "안녕하세요! 해당 RESTful api는 0.1.8 버전이며, Spring Boot Gradle로 제작하였습니다. 배포는 AWS CodeDeploy & Travis CI로 자동화 하였습니다.";
+        return "안녕하세요! 해당 RESTful api는 0.1.8 버전이며, Spring Boot Gradle로 제작하였습니다. 배포는 AWS CodeDeploy & Travis CI로 자동화 하였습니다. 18.07.26";
     }
 }
