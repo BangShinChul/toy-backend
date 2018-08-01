@@ -2,6 +2,7 @@
 ---
 AWS CodeDeploy & Travis CI를 통한 Spring boot gradle로 만든 RESTful API 배포 자동화 
 참고 URL : 
+- http://jojoldu.tistory.com/263?category=635883
 - http://jojoldu.tistory.com/265?category=635883
 - http://jojoldu.tistory.com/267?category=635883
 

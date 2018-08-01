@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-@CrossOrigin(origins = {"http://localhost:9000","http://localhost:9001","http://localhost:3000","http://localhost:80"}, maxAge = 4800, allowCredentials = "false")
+@CrossOrigin(origins = {"http://localhost:9000","http://localhost:9001","http://localhost:3000","http://localhost:80", "http://bangshinchul.com", "http://rest.bangshinchul.com:9000"}, maxAge = 4800, allowCredentials = "false")
 @RestController
 public class HelloWorldController {
     private static final String template = "Hello %s!";
