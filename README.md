@@ -10,6 +10,10 @@
 ![image](https://user-images.githubusercontent.com/26675063/43045525-00881a90-8df5-11e8-80a6-6f92a264a6bc.png)
 
 ***
+### 18.09.15 jpa database 정보 jasypt로 암호화 하는 작업
+> 참고 : <a href="https://justinrodenbostel.com/2014/06/06/part-5a-additional-credential-security-spring-data-jpa-jasypt/">링크</a>
+
+***
 ### 18.08.14 gradle jpa + mariadb 참고
 - https://springframework.guru/configuring-spring-boot-for-mariadb/
 - https://spring.io/guides/gs/accessing-data-rest/

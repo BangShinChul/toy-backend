@@ -4,7 +4,7 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
-        classpath 'com.github.ulisesbocchio:jasypt-spring-boot-starter:1.17'
+        classpath 'com.github.mowedgrass:jasypt-gradle-boot-plugin:0.1.33'
     }
 }
 
@@ -46,6 +46,6 @@ dependencies {
     runtime('com.h2database:h2')
     compile('org.mariadb.jdbc:mariadb-java-client')
     compileOnly('org.projectlombok:lombok')
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile('org.jasypt:jasypt-spring3:1.9.2')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
