@@ -3,11 +3,9 @@ os: linux
 files:
   - source: /toy-backend.zip
     destination: /home/ubuntu/travis/build/
-permissions:
-  - object: /home/ubuntu
-    owner: ubuntu
-    group: ubuntu
+    runas: root
 hooks:
   AfterInstall: # 배포가 끝나면 아래 명령어를 실행
     - location: execute-deploy.sh
       timeout: 180
+      runas: root
