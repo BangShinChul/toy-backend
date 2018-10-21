@@ -41,7 +41,7 @@ deploy:
   - provider: codedeploy
     access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
     secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
-    bucket: toyproject-bsc # travis에 빌드한 내용을 저장할 S3 버킷
+    bucket: toyproject-bsc # travis에 빌드한 내용을 저장한 S3 버킷
     key: toy-backend.zip # S3 버킷에 저장된 toy-backend.zip 파일을 EC2로 배포
     bundle_type: zip
     application: toy-project-backend # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
