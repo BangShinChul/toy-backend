@@ -11,4 +11,6 @@ public interface AccountRepository extends JpaRepository<Account, String> {
 
     List<Account> findByUserEmail(String userEmail);
     // findByUserEmail : Account 엔티티에서 userEmail로 유저목록을 가져오는 기능이다.
+
+
 }

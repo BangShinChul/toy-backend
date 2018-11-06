@@ -31,4 +31,10 @@ public class AccountServiceImpl implements AccountService {
     public List<Account> findByUserEmail(String userEmail) {
         return accountRepository.findByUserEmail(userEmail);
     }
+
+
+    @Override
+    public Object signUp(Account account) {
+        return accountRepository.save(account);
+    }
 }

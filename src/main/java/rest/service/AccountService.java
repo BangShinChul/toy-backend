@@ -8,4 +8,5 @@ public interface AccountService {
     List<Account> findAll();
     List<Account> findByUserId(String userId);
     List<Account> findByUserEmail(String userEmail);
+    Object signUp(Account userInfo);
 }

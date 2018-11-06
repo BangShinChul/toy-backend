@@ -67,6 +67,20 @@ public class AccountController {
         return "Account Test";
     }
 
+    @PostMapping("/signUp")
+    public Object signUp(@RequestBody Account account){
+        // String result = "UserId : "+userId+" / UserPassword : "+userPassword;
+        List<Account> idCheck = accountService.findByUserId(account.getUserId());
+        List<Account> emailCheck = accountService.findByUserEmail(account.getUserEmail());
+
+        if(idCheck.isEmpty() && emailCheck.isEmpty()){
+            // 아이디와 이메일이 중복되지 않을때 insert
+            return accountService.signUp(account);
+        }else {
+            return "0000"; // 중복됨
+        }
+    }
+
 //    @PostMapping("/getAccount")
 //    @ResponseBody
 //    public Boolean getAccount(
