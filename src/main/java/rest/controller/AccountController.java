@@ -23,13 +23,6 @@ public class AccountController {
         return accountService.findAll();
     }
 
-//    @PostMapping("/doLogin")
-//    public String doLogin(
-//            @RequestParam(name="userId", required=true) String userId,
-//            @RequestParam(name="userPassword", required=true) String userPassword){
-//        String result = "UserId : "+userId+" / UserPassword : "+userPassword;
-//        return result;
-//    }
     @PostMapping("/doLogin")
     public String doLogin(@RequestBody Login login){
         // String result = "UserId : "+userId+" / UserPassword : "+userPassword;
@@ -54,17 +47,9 @@ public class AccountController {
         }
     }
 
-
     @GetMapping("/testLogin")
     public Object getLogin(@RequestBody Login login){
-
         return login;
-    }
-
-    @GetMapping("/test")
-    @ResponseBody
-    public String test() {
-        return "Account Test";
     }
 
     @PostMapping("/signUp")
