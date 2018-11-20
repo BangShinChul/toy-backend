@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /toy-backend.zip
+  - source: /
     destination: /home/ubuntu/travis/build/
     runas: root
 hooks:

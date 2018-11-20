@@ -22,6 +22,6 @@ public class HelloWorldController {
     @ResponseBody
     public String defaultHello(@RequestParam(name="name", required=false, defaultValue = "Stranger") String name) {
 //        return new Greeting(counter.incrementAndGet(), String.format(template, name));
-        return "ver 0.1.12 - 181120";
+        return "ver 0.1.13 - 181120";
     }
 }

@@ -29,8 +29,8 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
-#build
+# build
 /build/
 
 # application.properties
-src/main/resources/application.properties
+# src/main/resources/application.properties
